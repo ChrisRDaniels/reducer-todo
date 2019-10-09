@@ -21,7 +21,25 @@
   color: #09d3ac;
 }
 
-.completed{
+.completed {
   text-decoration: line-through;
-  color: crimson;
+  color: whitesmoke;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center; 
+  color: black;
+  background-color: rgb(134, 134, 134);
+  width: 50%;
+  min-height: 20vw;
+  margin: 0 auto;
+  font-size: 2rem;
+  border-radius: 25px;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+  padding: 1vw;
 }
