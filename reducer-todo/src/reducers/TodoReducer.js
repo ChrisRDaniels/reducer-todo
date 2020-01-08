@@ -1,8 +1,11 @@
+import React from 'react';
+import TodoList from '../components/TodoList';
+
 export const initialState = 
     [
     {item: "Reducer Todo Item",
     completed: false,
-    id: 1
+    id: 1,
     }
 ]
 
@@ -14,9 +17,17 @@ export const reducer = (state, action) => {
             const itemToAdd = {
                 item: action.payload,
                 completed: false,
-                id: Date.now()
+                id: Date.now(),
             }
             return [...state, itemToAdd]
+
+         case "ADD_DATE":
+            const dateToAdd = {
+                date: action.payload,
+                completed: false,
+                id: Date.now(),
+                }
+                return [...state, dateToAdd]    
             
         case "TOGGLE_COMPLETE":
             const newState = state.map(item => item.id.toString() === action.payload.toString() ? {...item, completed:!item.completed} : item)

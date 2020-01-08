@@ -1,5 +1,4 @@
-import React, { useReducer } from 'react'
-import { initialState, reducer } from "../reducers/TodoReducer";
+import React from 'react'
 
 export default function TodoItem(props) {
     console.log("props for todo item", props)

@@ -45,7 +45,7 @@
   border-radius: 25px;
   margin-top: 5vw;
   margin-bottom: 5vw;
-  padding: 1vw;
+  padding: 2vw;
 }
   button {
     box-shadow:inset 0px 39px 0px -24px #e67a73;
@@ -91,4 +91,8 @@
     text-decoration: none;
     font-style: normal;
     font-variant: small-caps; 
+  }
+  form {
+    display: flex;
+    flex-direction: column;
   }
